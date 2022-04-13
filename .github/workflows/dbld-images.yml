@@ -29,6 +29,7 @@ jobs:
     strategy:
       matrix:
         image:
+          - almalinux-8_4
           - centos-7
           - fedora-35
           - debian-bullseye

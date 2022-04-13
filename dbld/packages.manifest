@@ -3,26 +3,26 @@
 ##################################################
 
 # packages to run gosu installation
-gnupg                           [centos, fedora]
+gnupg                           [almalinux, centos, fedora]
 gosu				[ubuntu, debian]
 
 # download various stuff over https
-wget                            [centos, fedora, debian, ubuntu]
-ca-certificates       	        [centos, fedora, debian, ubuntu]
+wget                            [almalinux, centos, fedora, debian, ubuntu]
+ca-certificates       	        [almalinux, centos, fedora, debian, ubuntu]
 
 # criterion compilation
-cmake                           [centos, fedora, debian, ubuntu]
-gcc-c++				[centos, fedora]
+cmake                           [almalinux, centos, fedora, debian, ubuntu]
+gcc-c++				[almalinux, centos, fedora]
 
 # to unpack gradle binary package (zip file)
-unzip                           [centos, fedora, debian, ubuntu]
+unzip                           [almalinux, centos, fedora, debian, ubuntu]
 
 # I dont know why this is needed.
-bzip2                           [centos, fedora, debian, ubuntu]
+bzip2                           [almalinux, centos, fedora, debian, ubuntu]
 
 # Basic interactive tools
-less                            [centos, fedora, debian, ubuntu]
-vim                             [centos, fedora, debian, ubuntu]
+less                            [almalinux, centos, fedora, debian, ubuntu]
+vim                             [almalinux, centos, fedora, debian, ubuntu]
 
 #############################################################################
 # Essential build tools not explicitly referenced from
@@ -37,8 +37,8 @@ dh-systemd                      [ubuntu-xenial]
 dpkg-dev                        [debian, ubuntu]
 equivs                          [debian, ubuntu]
 libdistro-info-perl		[debian, ubuntu]
-make                            [centos, fedora]
-rpm-build                       [centos, fedora]
+make                            [almalinux, centos, fedora]
+rpm-build                       [almalinux, centos, fedora]
 which				[fedora]
 
 #############################################################################
@@ -55,8 +55,8 @@ docbook-style-xsl               [fedora]
 # Build environment dependencies that are not strictly required by syslog-ng
 # but are needed by our dbld functionality.
 #############################################################################
-git                             [centos, fedora, debian, ubuntu]
-ccache                          [centos, fedora, debian, ubuntu]
+git                             [almalinux, centos, fedora, debian, ubuntu]
+ccache                          [almalinux, centos, fedora, debian, ubuntu]
 
 #############################################################################
 # packages to run successful autogen.sh
@@ -71,9 +71,9 @@ ccache                          [centos, fedora, debian, ubuntu]
 # lines, so we don't need to list them here.
 #############################################################################
 
-autoconf                    [centos, fedora]
-autoconf-archive            [centos, fedora]
-automake                    [centos, fedora]
+autoconf                    [almalinux, centos, fedora]
+autoconf-archive            [almalinux, centos, fedora]
+automake                    [almalinux, centos, fedora]
 
 #############################################################################
 # syslog-ng core dependencies
@@ -90,7 +90,7 @@ automake                    [centos, fedora]
 python-dev                  [debian-stretch, debian-buster, ubuntu-xenial, ubuntu-bionic]
 python2-dev                 [debian-sid]
 python-devel                [centos, fedora]
-python3-devel               [fedora]
+python3-devel               [almalinux, fedora]
 python-unversioned-command  [fedora]
 python3-dev                 [ubuntu-focal]
 python-pip                      [centos, fedora, debian-stretch, debian-buster, ubuntu-trusty, ubuntu-xenial, ubuntu-bionic]
